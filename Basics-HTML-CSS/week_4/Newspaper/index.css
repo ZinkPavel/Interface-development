@@ -1,4 +1,30 @@
-/*Ссылка на шрифты кроме основного 'https://fonts.googleapis.com/css?family=Farsan|Hind+Siliguri|Racing+Sans+One|Six+Caps|Space+Mono:700'*/
+/* Fonts */
+
+@font-face {
+    font-family: Permanent Marker;
+    src: url(fonts/PermanentMarker-Regular.ttf);
+}
+
+@font-face {
+    font-family: Six Caps;
+    src: url(fonts/SixCaps-Regular.ttf);
+}
+
+@font-face {
+    font-family: Racing Sans One;
+    src: url(fonts/RacingSansOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: Farsan;
+    src: url(fonts/Farsan-Regular.ttf);
+}
+
+@font-face {
+    font-family: Space Mono;
+    src: url(fonts/SpaceMono-Regular.ttf);
+}
+
 body {
     width: 1200px;
     margin: 0 auto;
