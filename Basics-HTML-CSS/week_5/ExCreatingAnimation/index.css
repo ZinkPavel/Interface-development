@@ -1,0 +1,24 @@
+#box-1 {
+    background: #f00;
+    height: 150px;
+    width: 150px;
+}
+
+.animation .boxes {
+    transition: background-color .5s;
+    
+    animation-duration: 3s;
+    animation-name: boxes;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+#box-1:hover { background-color: #ff0; }
+
+@keyframes boxes {
+    25% { transform: translateX(100px); }
+    50% { transform: translateX(100px) translateY(100%); }
+    75%, 100% { transform: translateX(100px) translateY(100%) scale(2) rotate(145deg); }
+}
