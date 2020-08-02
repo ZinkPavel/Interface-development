@@ -5,13 +5,45 @@
 <head>
     <meta charset="utf-8">
     <title> Beautiful red cat </title>
+    <style>
+        .buttons {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        form {
+            text-align: center;
+        }
+        
+        button {
+            font: 40px Arial, Helvetica, sans-serif;
+            
+            width: 500px;
+            height: 200px;
+            margin: 0 25px;
+        }
+    </style>
 </head>
 
 <body>
-    <img src="imgs/10.jpg" alt="Beautiful red cat">
-    <form action="index.html" target="_self">
-        <button>Back</button>
-    </form>
+    <h1>! Jump page !</h1>
+    <!-- <img src="imgs/10.jpg" alt="Beautiful red cat"> -->
+    <div class="buttons">
+        <form action="grid-mode.html" target="_self">
+            <button>Back to grid mode</button>
+        </form>
+    
+        <form action="list-mode.html" target="_self">
+            <button>Back to list mode</button>
+        </form>
+    </div>
+    
 </body>
 
 </html>

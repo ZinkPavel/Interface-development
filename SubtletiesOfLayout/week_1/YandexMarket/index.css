@@ -55,6 +55,11 @@ p {
     overflow-y: hidden;
 }
 
+#switch {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
 .product-name h3 {
     font-size: 19px;
     white-space: nowrap;
