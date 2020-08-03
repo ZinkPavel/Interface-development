@@ -2,7 +2,7 @@
     position: relative;
     width: 10em;
     height: 2em;
-    background-image: url(imgs/off.svg);
+    background-image: url(../imgs/off.svg);
     background-size: 2em auto;
 
     margin: .5em 0;
@@ -29,12 +29,12 @@
 
 .rating_star:checked,
 .rating_star:hover {
-    background-image: url(imgs/on.svg);
+    background-image: url(../imgs/on.svg);
     background-size: 2em auto;
 }
 
 .rating_star:hover ~ .rating_star {
-    background-image: url(imgs/off.svg);
+    background-image: url(../imgs/off.svg);
     background-size: 2em auto;
 }
 
