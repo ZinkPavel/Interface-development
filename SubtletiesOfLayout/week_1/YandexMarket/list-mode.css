@@ -5,59 +5,60 @@ p {
     border: none;
 }
 
+#switch {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
 .products {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    display: block;
 }
 
 .product-card {
+    position: relative;
     display: block;
-    height: 500px;
-    min-height: 500px;
-    width: 300px;
-    min-width: 300px;
-    /* border: 1px dashed black; */
-    margin: 25px;
+    height: 250px;
+    width: 800px;
 
-    font-size: 14px;
-    font-family: Arial, Helvetica, sans-serif;
+    /* border: 3px solid black; */
+
+    margin: 25px 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .product-pictures {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: flex-start;
-    align-items: center;
+    position: absolute;
+    display: inline-block;
+    width: 30%;
+    height: 100%;
 
-    /* border: 1px solid black; */
-
-    height: 50%;
-    width: 100%;
+    /* border: 2px solid greenyellow;     */
 }
 
-.product-pictures img {
-    max-height: 245px;
+.product-pictures img {    
+    position: absolute;
     max-width: 100%;
+    max-height: 100%;
+
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .product-pictures img:hover {
     opacity: .7;
 }
 
-.product-bottom {
-    position: relative;
-    height: 50%;
-    width: 100%;
-    /* border: 1px solid red; */
-    
-    overflow-y: hidden;
-}
+.product-info {
+    position: absolute;
+    display: inline block;
+    left: 32.5%;
+    width: 35%;
+    height: 100%;
 
-#switch {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+    /* margin: 0 25px; */
+    
+    /* border: 2px solid red; */
 }
 
 .product-name h3 {
@@ -186,8 +187,15 @@ p {
     text-decoration: line-through;
 }
 
-.product-description p {
+.product-description {
+    display: inline-block;
+    position: absolute;
+    left: 70%;
+    width: 30%;
+    height: 100%;
+
+    /* border: 2px solid orange; */
+
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: pre-line;
 }
