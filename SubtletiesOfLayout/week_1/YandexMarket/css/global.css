@@ -1,0 +1,51 @@
+h3,
+p {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+#switch {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.product-pictures img:hover {
+    opacity: .7;
+}
+
+.product-name h3 {
+    font-size: 19px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    margin-top: .5em;
+}
+
+.product-name h3:hover {
+    color: red;
+}
+
+.product-category a {
+    color: #666666;
+    font-size: 85%;
+    font-weight: bold;
+}
+
+.product-price {
+    margin-top: .25em;
+    margin-bottom: .25em;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.product-price .cur-price {
+    color: #990000;
+}
+
+.product-price .old-price {
+    font-size: .75em;
+    color: #4d4d4d;
+    text-decoration: line-through;
+}
