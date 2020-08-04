@@ -1,0 +1,39 @@
+.title {
+    margin: 10px 0 0 10px;
+    font-weight: bold;
+    
+    position: absolute;
+    float: left;
+}
+
+/* #1 */
+
+.model#first {
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+    
+    position: relative;
+}
+
+.images#first {
+    border: 1px solid red;
+    width: 840px;
+    height: 100%;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.images#first img {
+    border: 1px solid blue;
+    max-width: 200px;
+    max-height: 200px;
+
+    position: relative;
+    float: left;
+    top: 50%;
+    transform: translateY(-50%);
+    margin: 0 10px;
+}
