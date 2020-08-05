@@ -11,13 +11,13 @@
 .model#first {
     width: 100%;
     height: 300px;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     
     position: relative;
 }
 
 .images#first {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 840px;
     height: 100%;
 
@@ -27,7 +27,7 @@
 }
 
 .images#first img {
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     max-width: 200px;
     max-height: 200px;
 
@@ -36,4 +36,76 @@
     top: 50%;
     transform: translateY(-50%);
     margin: 0 10px;
+}
+
+/* #2 */
+
+.model#second {
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 400px;
+
+    position: relative;
+}
+
+.product-cards {
+    /* border: 1px solid red; */
+    width: 840px;
+    height: 100%;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card {
+    /* border: 2px solid yellowgreen; */
+    height: 100%;
+    width: 200px;
+    text-align: center;
+
+    position: relative;
+    float: left;
+    margin: 0 3px;
+}
+
+.card:hover {
+    z-index: 1;
+    box-shadow: 0 0 7.5px black;
+}
+
+.card:hover p {
+    display: block;
+}
+
+.product-image {
+    width: 100%;
+    height: 50%;
+
+    display: block;
+    position: absolute;
+}
+
+.card img {
+    /* border: 1px solid blue; */
+    max-width: 180px;
+    max-height: 185px;
+
+    position: absolute;
+    left: 50%;
+    top: 195px;
+    transform: translateX(-50%) translateY(-100%);
+}
+
+.card p {
+    margin: 0;
+    display: none;
+    /* border: 1px solid brown; */
+    width: 180px;
+    height: 185px;
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 205px;
 }
