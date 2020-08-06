@@ -5,6 +5,10 @@ p {
     border: none;
 }
 
+.products {
+    display: block;
+}
+
 #switch {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
