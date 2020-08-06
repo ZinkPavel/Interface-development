@@ -8,62 +8,7 @@
     float: left;
 }
 
-/* #1, #3 */
-
-.model#first,
-.model#third {
-    width: 100%;
-    height: 300px;
-    /* border: 1px solid black; */
-    
-    position: relative;
-}
-
-.model#first .product-cards,
-.model#third .product-cards {
-    /* border: 1px solid red; */
-    width: 840px;
-    height: 100%;
-
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.model#first .product-cards img,
-.model#third .product-cards img {
-    /* border: 1px solid blue; */
-    max-width: 200px;
-    max-height: 200px;
-
-    position: relative;
-    float: left;
-    top: 50%;
-    transform: translateY(-50%);
-    margin: 0 10px;
-}
-
-/* #2 */
-
-.model#second {
-    /* border: 1px solid black; */
-    width: 100%;
-    height: 400px;
-
-    position: relative;
-}
-
-.model#second .product-cards {
-    /* border: 1px solid red; */
-    width: 840px;
-    height: 100%;
-
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.model#second .card {
+.card {
     /* border: 2px solid yellowgreen; */
     height: 100%;
     width: 200px;
@@ -74,16 +19,72 @@
     margin: 0 3px;
 }
 
-.model#second .card:hover {
+/* #1, #3 */
+
+.maket#first,
+.maket#third {
+    width: 100%;
+    height: 200px;
+    /* border: 1px solid black; */
+    
+    position: relative;
+}
+
+.maket#first .product-cards,
+.maket#third .product-cards {
+    /* border: 1px solid red; */
+    width: 840px;
+    height: 100%;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.maket#first .card img,
+.maket#third .card img {
+    /* border: 1px solid blue; */
+    max-width: 200px;
+    max-height: 200px;
+
+    position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    /* margin: 0 10px; */
+}
+
+/* #2 */
+
+.maket#second {
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 400px;
+
+    position: relative;
+}
+
+.maket#second .product-cards {
+    /* border: 1px solid red; */
+    width: 840px;
+    height: 100%;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.maket#second .card:hover {
     z-index: 1;
     box-shadow: 0 0 7.5px black;
 }
 
-.model#second .card:hover p {
+.maket#second .card:hover p {
     display: block;
 }
 
-.model#second .card img {
+.maket#second .card img {
     /* border: 1px solid blue; */
     max-width: 180px;
     max-height: 185px;
@@ -94,7 +95,7 @@
     transform: translateX(-50%) translateY(-100%);
 }
 
-.model#second .card p {
+.maket#second .card p {
     overflow: hidden;
     text-overflow: ellipsis;
     
@@ -112,3 +113,60 @@
 
 /* #3 */
 
+.maket#third .card:hover {
+    cursor: pointer;
+}
+
+.maket#third .modal-window {
+    width: 100%;
+    height: 100%;
+    
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.maket#third .modal-window .bg {
+    background-color: blueviolet;
+    width: 100%;
+    height: 100%;
+    opacity: .9;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.maket#third .modal-window .title {
+    color: #fff;
+
+    position: absolute;
+    z-index: inherit;
+    margin: 25px 0 0 25px;
+}
+
+.maket#third .modal-window .product-image {    
+    position: absolute;
+    max-width: 90%;
+    max-height: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.maket#third .modal-window .close-image {    
+    width: 50px;
+    height: 50px;
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 25px 25px 0 0;
+}
+
+.maket#third .modal-window .close-image:hover {
+    cursor: pointer;
+}

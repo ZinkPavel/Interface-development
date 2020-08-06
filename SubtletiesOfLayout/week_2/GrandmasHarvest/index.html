@@ -9,20 +9,20 @@
 </head>
 
 <body>
-    <div class="model" id="first">
+    <div class="maket" id="first">
         <p class="title">Maket #1: gallery</p>
         
         <div class="product-cards">
-            <img src="images/watermelon.png" alt="">
-            <img src="images/mango.png" alt="">
-            <img src="images/melon.png" alt="">
-            <img src="images/pineapple.png" alt="">
+            <div class="card"><img src="images/watermelon.png" alt=""></div>
+            <div class="card"><img src="images/mango.png" alt=""></div>
+            <div class="card"><img src="images/melon.png" alt=""></div>
+            <div class="card"><img src="images/pineapple.png" alt=""></div>
         </div>
     </div>
 
     <hr size="5px" color="black">
 
-    <div class="model" id="second">
+    <div class="maket" id="second">
         <p class="title">Maket #2: gallery, hover</p>
 
         <div class="product-cards">
@@ -93,15 +93,26 @@
 
     <hr size="5px" color="black">
 
-    <div class="model" id="third">
+    <div class="maket" id="third">
         <p class="title">Maket #3: gallery, modal window</p>
+
+        <div class="modal-window">
+            <script defer src="modal.js"></script>
+
+            <span class="title">Maket #3: gallery, modal window</span>
+            <div class="bg"></div>
+            <img class="product-image" src="" alt="product-image">
+            <img class="close-image" src="images/close.svg" alt="close" onclick="closeModalWindow()">
+        </div>
+        
         <div class="product-cards">
-            <img src="images/watermelon.png" alt="">
-            <img src="images/mango.png" alt="">
-            <img src="images/melon.png" alt="">
-            <img src="images/pineapple.png" alt="">
+            <div class="card"><img src="images/watermelon.png" alt="" onclick="showModalWindow(this)"></div>
+            <div class="card"><img src="images/mango.png" alt="" onclick="showModalWindow(this)"></div>
+            <div class="card"><img src="images/melon.png" alt="" onclick="showModalWindow(this)"></div>
+            <div class="card"><img src="images/pineapple.png" alt="" onclick="showModalWindow(this)"></div>
         </div>
     </div>
+
 </body>
 
 </html>
