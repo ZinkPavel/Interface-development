@@ -42,7 +42,8 @@
 }
 
 .maket#first .card img,
-.maket#third .card img {
+.maket#third .card img,
+.maket#fourth .card img {
     /* border: 1px solid blue; */
     max-width: 200px;
     max-height: 200px;
@@ -168,5 +169,38 @@
 }
 
 .maket#third .modal-window .close-image:hover {
+    cursor: pointer;
+}
+
+/* #4 */
+
+.maket#fourth {
+    width: 100%;
+    height: 250px;
+    border: 1px solid black;
+    
+    position: relative;
+}
+
+.maket#fourth .product-cards {
+    /* border: 1px solid red; */
+    width: 840px;
+    height: 80%;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.maket#fourth .slider {
+    /* border: 1px solid red; */
+
+    position: absolute;
+    left: 50%;
+    bottom: 25px;
+    transform: translateX(-50%) translateY(50%);
+}
+
+.maket#fourth .slider input {
     cursor: pointer;
 }
