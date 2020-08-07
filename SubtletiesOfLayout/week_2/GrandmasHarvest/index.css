@@ -130,10 +130,10 @@
 }
 
 .maket#third .modal-window .bg {
-    background-color: blueviolet;
+    background-color: #000;
     width: 100%;
     height: 100%;
-    opacity: .9;
+    opacity: .7;
     
     position: absolute;
     top: 50%;

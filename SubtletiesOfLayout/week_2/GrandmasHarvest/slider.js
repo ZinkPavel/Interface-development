@@ -17,6 +17,7 @@ function slide () {
     }
 
     result = result.concat(result.splice(0, checkedSlider));
+    // result = result.concat(result.splice(0, 1)); na 3
     
     for (let i = 0; i < imagePaths.length; i++) {
         imagePaths[i].setAttribute("src", result[i]);
