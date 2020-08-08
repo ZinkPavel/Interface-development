@@ -1,3 +1,15 @@
+/* VARS */
+
+:root {
+    --bg-fields: #a6a6a6;
+}
+
+.fields {
+    --green-gr: linear-gradient(to right, green, white);
+    --yellow-gr: linear-gradient(to right, yellow, white);
+    --red-gr: linear-gradient(to right, red, white);
+}
+
 body {
     background-color: #ccc;
     
@@ -21,17 +33,18 @@ header > h1 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/* LEFT-BAR */
+
 .l-bar {
-    border: 2px solid red;
+    /* border: 2px solid red; */
     width: 100%;
     height: 100%;
+    background-color: var(--bg-fields);
     
     grid-area: l-bar;
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    background-color: #a6a6a6;
-    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .l-bar > .cat-breed {
@@ -44,11 +57,19 @@ header > h1 {
     height: 50px;
 }
 
+.l-bar > .cat-breed:hover {
+    background-color: #666;
+    color: #fff;
+}
+
 main {
     border: 2px solid black;
+    height: 500px;
     
     grid-area: main;
 }
+
+/* CENTER */
 
 main > .cat {
     max-width: 500px;
@@ -100,9 +121,12 @@ main > .cat {
     display: block;
 }
 
+/* RIGHT-BAR */
+
 .r-bar {
     width: 100%;
-    border: 2px solid red;
+    /* border: 2px solid red; */
+    /* background-color: var(--bg-fields); */
 
     grid-area: r-bar;
 }
@@ -113,17 +137,79 @@ main > .cat {
 }
 
 .r-bar > .filter {
-    text-align: right;
     margin-right: 10px;
-}
-
-.r-bar > .rating {
-    
-}
-
-.rating-filter > * {
     cursor: pointer;
+
+    display: inline-block;
 }
+
+.filter#descending:checked + .fields > .field {
+    order: var(--rating);
+}
+
+.r-bar > .fields {
+    display: flex;
+    flex-direction: column;
+}
+
+.field {
+    border: 1px solid black;
+    width: 100%;
+}
+
+.field:nth-child(1) {--rating: 2;}
+.field:nth-child(2) {--rating: 3;}
+.field:nth-child(3) {--rating: 1;}
+.field:nth-child(4) {--rating: 6;}
+
+
+.field-title {
+    font-size: 125%;
+}
+
+.rating {
+    border: 1px solid #0000ff;
+    width: 90%;
+    height: 15px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 7.5px 5px;
+}
+
+.field:nth-child(1) .rate {
+    width: 63%;
+    background: var(--green-gr);
+}
+
+.field:nth-child(2) .rate {
+    width: 56%;
+    background: var(--yellow-gr);
+}
+
+.field:nth-child(3) .rate {
+    width: 70%;
+    background: var(--green-gr);
+}
+
+.field:nth-child(4) .rate {
+    width: 28%;
+    background: var(--red-gr);
+}
+
+.rating > .value {
+    text-align: center;
+    font-weight: bold;
+    font-size: 125%;
+    line-height: 75%;
+    
+    border: 1px solid red;
+    width: 30%;
+    height: 100%;
+}
+
+/* FOOTER */
 
 footer {
     border: 1px dashed #000;
