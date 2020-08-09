@@ -20,11 +20,10 @@ body {
         "header header header"
         "l-bar main r-bar"
         "footer footer footer";
+    gap: 10px;
 }
 
 header {
-    border: 2px dashed black;
-
     grid-area: header;
 }
 
@@ -36,7 +35,6 @@ header > h1 {
 /* LEFT-BAR */
 
 .l-bar {
-    /* border: 2px solid red; */
     width: 100%;
     height: 100%;
     background-color: var(--bg-fields);
@@ -62,14 +60,13 @@ header > h1 {
     color: #fff;
 }
 
+/* CENTER */
+
 main {
-    border: 2px solid black;
-    height: 500px;
+    border: 2px solid red;
     
     grid-area: main;
 }
-
-/* CENTER */
 
 main > .cat {
     max-width: 500px;
@@ -125,22 +122,37 @@ main > .cat {
 
 .r-bar {
     width: 100%;
-    /* border: 2px solid red; */
-    /* background-color: var(--bg-fields); */
+    position: relative;
+}
 
-    grid-area: r-bar;
+.r-bar > .filter-layout {
+    background-color: var(--bg-fields);
+    width: 100%;
+    height: 280px;
+    position: absolute;
+    z-index: -1;
 }
 
 .r-bar > .title {
-    margin: 10px;
+    font-size: 20px;
     color: #ff0000;
+
+    position: absolute;
+    margin: 10px;
 }
 
 .r-bar > .filter {
-    margin-right: 10px;
     cursor: pointer;
+}
 
-    display: inline-block;
+.r-bar > label.filter {
+    position: absolute;
+    right: 20px;
+}
+
+input#descending {
+    position: absolute;
+    right: 0;
 }
 
 .filter#descending:checked + .fields > .field {
@@ -148,13 +160,16 @@ main > .cat {
 }
 
 .r-bar > .fields {
+    position: absolute;
+    width: 100%;
+    top: 50px;
     display: flex;
     flex-direction: column;
 }
 
 .field {
-    border: 1px solid black;
     width: 100%;
+    margin-left: 10px;
 }
 
 .field:nth-child(1) {--rating: 2;}
@@ -162,13 +177,11 @@ main > .cat {
 .field:nth-child(3) {--rating: 1;}
 .field:nth-child(4) {--rating: 6;}
 
-
 .field-title {
     font-size: 125%;
 }
 
 .rating {
-    border: 1px solid #0000ff;
     width: 90%;
     height: 15px;
     
@@ -204,7 +217,6 @@ main > .cat {
     font-size: 125%;
     line-height: 75%;
     
-    border: 1px solid red;
     width: 30%;
     height: 100%;
 }
@@ -212,8 +224,6 @@ main > .cat {
 /* FOOTER */
 
 footer {
-    border: 1px dashed #000;
-
     grid-area: footer;
 }
 
