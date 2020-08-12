@@ -13,103 +13,130 @@
         <h1>Бабуленькины котятки</h1>
     </header>
 
-    <div class="l-bar">
-        <button class="cat-breed">Абиссинская</button>
-        <button class="cat-breed">Британская</button>
-        <button class="cat-breed">Русская голубая</button>
-        <button class="cat-breed">Сиамская</button>
-    </div>
     
     <main>
-        <div class="cat" id="first">
-            <img src="images/3.jpg" alt="cat-images">
-            <div class="description">
-                <div class="bg"></div>
-                <span>Абармот, 5 лет</span>
+        <input type="checkbox" name="cat" id="abys">
+        <input type="checkbox" name="cat" id="british">
+        <input type="checkbox" name="cat" id="cheshire">
+        <input type="checkbox" name="cat" id="red">
+        
+        <div class="l-bar">
+            <label for="abys">Аббисинская</label>
+            <label for="british">Британская</label>
+            <label for="cheshire">Чеширская</label>
+            <label for="red">Рыжая</label>
+        </div>
+        
+        <div class="gallery">
+            <div class="cat abys">
+                <img src="https://cs11.pikabu.ru/post_img/big/2019/09/24/4/1569304193157226860.jpg" alt="cat-1">
+                <div class="description">
+                    <div class="layout"></div>
+                    <div class="text">Cat №1, 2 year</div>
+                </div>
+            </div>
+
+            <div class="cat abys">
+                <img src="https://litbro.ru/wp-content/uploads/2019/12/Okrasy-abissinskih-koshek-1.jpg" alt="cat-2">
+                <div class="description">
+                    <div class="layout"></div>
+                    <div class="text">Cat №2, 2 year</div>
+                </div>
+            </div>
+
+            <div class="cat british">
+                <img src="https://st3.depositphotos.com/1004061/19077/i/450/depositphotos_190778748-stock-photo-grey-british-shorthair-cat-staring.jpg" alt="cat-3">
+                <div class="description">
+                    <div class="layout"></div>
+                    <div class="text">Cat №3, 2 year</div>
+                </div>
+            </div>
+
+            <div class="cat british">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS_eRtDqVAQ3IKUwOvn8ptI22ag3quZeaOe6Q&usqp=CAU" alt="cat-4">
+                <div class="description">
+                    <div class="layout"></div>
+                    <div class="text">Cat №4, 2 year</div>
+                </div>
+            </div>
+
+            <div class="cat cheshire">
+                <img src="https://i.mycdn.me/i?r=AyH4iRPQ2q0otWIFepML2LxRmjfgAKNcb3AMeRa3oqA_4Q" alt="cat-5">
+                <div class="description">
+                    <div class="layout"></div>
+                    <div class="text">Cat №5, 2 year</div>
+                </div>
+            </div>
+
+            <div class="cat cheshire">
+                <img src="https://yellowpurplearmadillo.files.wordpress.com/2015/06/alice36.jpg" alt="cat-6">
+                <div class="description">
+                    <div class="layout"></div>
+                    <div class="text">Cat №6, 2 year</div>
+                </div>
+            </div>
+
+            <div class="cat red">
+                <img src="https://super01.ru/pictures/product/big/44560_big.png" alt="cat-7">
+                <div class="description">
+                    <div class="layout"></div>
+                    <div class="text">Cat №7, 2 year</div>
+                </div>
+            </div>
+
+            <div class="cat red">
+                <img src="https://cdn.ryfma.com/images/omHGBGkcJphaP5eey/posts/post_full_1528289613024_osen-ryzhaya-koshka-jpg.jpg" alt="cat-8">
+                <div class="description">
+                    <div class="layout"></div>
+                    <div class="text">Cat №8, 2 year</div>
+                </div>
             </div>
         </div>
+        
+        <div class="r-bar">
+            <span class="title">RATING</span>
+            <br>
+            <input class="filter" type="checkbox" name="rating" id="descending">
+            <label class="filter" for="descending">по убыванию</label>
+            
+            <div class="fields">
+                <div class="field">
+                    <span class="field-title">Чеширская</span>
+                    <div class="rating">
+                        <div class="rate"></div>
+                        <span class="value">9</span>
+                    </div>
+                </div>
+    
+                <div class="field">
+                    <span class="field-title">Британская</span>
+                    <div class="rating">
+                        <div class="rate"></div>
+                        <span class="value">8</span>
+                    </div>
+                </div>
+                
+                <div class="field">
+                    <span class="field-title">Рыжая</span>
+                    <div class="rating">
+                        <div class="rate"></div>
+                        <span class="value">10</span>
+                    </div>
+                </div>
+                
+                <div class="field">
+                    <span class="field-title">Аббисинская</span>
+                    <div class="rating">
+                        <div class="rate"></div>
+                        <span class="value">4</span>
+                    </div>
+                </div>
 
-        <div class="cat">
-            <img src="images/1.jpg" alt="cat-images">
-            <div class="description">
-                <div class="bg"></div>
-                <span>Кот №2, 3 года</span>
             </div>
+
         </div>
-
-        <div class="cat">
-            <img src="images/2.jpg" alt="cat-images">
-            <div class="description">
-                <div class="bg"></div>
-                <span>Кот №3, 12 лет</span>
-            </div>
-        </div>
-
-        <div class="cat">
-            <img src="images/4.jpg" alt="cat-images">
-            <div class="description">
-                <div class="bg"></div>
-                <span>Кот №4, 7 лет</span>
-            </div>
-        </div>
-
-        <div class="cat">
-            <img src="images/5.jpeg" alt="cat-images">
-            <div class="description">
-                <div class="bg"></div>
-                <span>Кот №5, 5 лет</span>
-            </div>
-        </div>
-
-        <div class="cat">
-            <img src="images/6.jpg" alt="cat-images">
-            <div class="description">
-                <div class="bg"></div>
-                <span>Кот №6, 10 лет</span>
-            </div>
-        </div> 
     </main>
 
-    <div class="r-bar">
-        <div class="filter-layout"></div>
-        <span class="title">RATING</span>
-        <br>    
-        <label class="filter" for="descending">по убыванию</label>
-        <input class="filter" type="checkbox" name="rating" id="descending">
-        <div class="fields">
-            <div class="field">
-                <span class="field-title">Аббисинская</span>
-                <div class="rating">
-                    <div class="rate"></div>
-                    <span class="value">9</span>
-                </div>
-            </div>
-
-            <div class="field">
-                <span class="field-title">Британская</span>
-                <div class="rating">
-                    <div class="rate"></div>
-                    <span class="value">8</span>
-                </div>
-            </div>
-            
-            <div class="field">
-                <span class="field-title">Русская голубая</span>
-                <div class="rating">
-                    <div class="rate"></div>
-                    <span class="value">10</span>
-                </div>
-            </div>
-            
-            <div class="field">
-                <span class="field-title">Сиамская</span>
-                <div class="rating">
-                    <div class="rate"></div>
-                    <span class="value">4</span>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <footer>
         <hr size="1px" color="black">
