@@ -177,7 +177,7 @@ input#red:checked ~ .gallery > .red {
     float: right;
 }
 
-input.filter:checked + .fields > .field {
+input.filter:checked ~ .fields > .field {
     order: var(--rating);
 }
 
@@ -185,6 +185,7 @@ input.filter:checked + .fields > .field {
     width: 100%;
     display: flex;
     flex-direction: column;
+    gap: 10px;
 }
 
 .field:nth-child(1) {--rating: 2;}
