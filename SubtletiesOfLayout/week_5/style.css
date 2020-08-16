@@ -119,13 +119,11 @@ main {
 
 .ways > .title {
     font-size: 32pt;
+    font-weight: 100;
     text-align: center;
-    color: #fff;
 }
 
 .ways > .content {
-    border: 2px solid #fff;
-
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -134,7 +132,7 @@ main {
 }
 
 .ways > .content > .field {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     
     display: flex;
     flex-flow: column nowrap;
@@ -147,4 +145,31 @@ main {
     font-weight: 100;
     /* overflow */
     margin: 10px 0;
+}
+
+/* FOOTER */
+
+footer {
+    border: var(--border);
+    font-family: var(--arial);
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > .title {
+    font-weight: 100;
+}
+
+footer > .try,
+footer > .hover {
+    font-size: 20pt;
+    background-color: #ff0;
+    border-radius: 10px;
+    width: 275px;
+    height: 50px;
+
+    margin-top: 5px;
 }
