@@ -10,10 +10,16 @@
 
 body {
     background-color: #e6e6e6;
+    width: 980px;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 
     display: flex;
     flex-flow: column nowrap;
     justify-content: flex-start;
+    
     margin: 18px;
 }
 
@@ -60,6 +66,8 @@ main {
 .slider > .left,
 .slider > .right {
     background-color: #ffdb4a;
+    background-repeat: no-repeat;
+    background-position: center;
     outline: none;
     border: none;
     border-radius: 50%;
@@ -69,18 +77,20 @@ main {
     height: 60px;
 }
 
+.slider > .left {
+    transform: translateX(-150%);
+    background-image: url(images/left.png);
+}
+
+.slider > .right {
+    transform: translateX(150%);
+    background-image: url(images/right.png);
+}
+
 .slider > .left:hover, 
-.slider > .right:hover { opacity: .8; }
-
-.slider > .left { transform: translateX(-150%); }
-.slider > .right { transform: translateX(150%); }
-
-.slider > .left > img,
-.slider > .right > img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.slider > .right:hover {
+    opacity: .8;
+    cursor: pointer;
 }
 
 /* VIDEO */
@@ -112,8 +122,11 @@ main {
 
 .video > .play {
     background-color: #ffdb4a;
-    width: 100px;
-    height: 100px;
+    background-image: url(images/play.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 120px;
+    height: 120px;
     outline: none;
     border: none;
     border-radius: 50%;
@@ -125,20 +138,16 @@ main {
     transform: translate(-50%, -50%);
 }
 
-.video > .play > img {
-    position: absolute;
-    top: 50%;
-    left: 55%;
-    transform: translate(-50%, -50%);
+.video > .play:hover {
+    opacity: .8;
+    cursor: pointer;
 }
-
-.video > .play:hover { opacity: .8; }
 
 /* WAYS */
 
 .ways {
     font-family: var(--arial);
-    width: 65%;
+    width: 80%;
 }
 
 .ways > .title {
@@ -149,7 +158,7 @@ main {
 
 .ways > .content {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: space-between;
     align-items: flex-start;
     gap: 1%;
@@ -204,6 +213,13 @@ footer > .hover {
 }
 
 footer > .try { background: linear-gradient(#ffe349, #ffdb01); }
-footer > .try:hover { background: linear-gradient(#ffe86a, #ffe12f); }
 
-footer > .hover { background: linear-gradient(#ffe86a, #ffe12f);}
+footer > .try:hover {
+    background: linear-gradient(#ffe86a, #ffe12f);
+    cursor: pointer;
+}
+
+footer > .hover {
+    background: linear-gradient(#ffe86a, #ffe12f);
+    cursor: pointer;
+}
